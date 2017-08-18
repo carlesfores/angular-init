@@ -1,0 +1,64 @@
+{
+  "name": "angular-init",
+  "version": "1.0.0",
+  "description": "project sample based on angular 1.x",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlesfores/angular-init.git"
+  },
+  "author": "Carles Forès Soto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlesfores/angular-init/issues"
+  },
+  "homepage": "https://github.com/carlesfores/angular-init#readme",
+  "devDependencies": {
+    "angular-mocks": "^1.6.5",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^7.3.0",
+    "bootstrap-sass": "^3.3.7",
+    "browserify": "^14.3.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-copy": "^1.0.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-jasmine": "^2.4.2",
+    "gulp-jslint": "^1.0.10",
+    "gulp-sass": "^3.1.0",
+    "gulp-serve": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-util": "^3.0.8",
+    "jadeify": "^4.6.0",
+    "karma": "^1.6.0",
+    "karma-browserify": "^5.1.1",
+    "karma-chrome-launcher": "1.x || ^0.2.0",
+    "karma-firefox-launcher": "^1.0.1",
+    "karma-jasmine": "1.x || ^0.3.6",
+    "karma-nyan-reporter": "^0.2.5",
+    "karma-opera-launcher": "^1.0.0",
+    "karma-safari-launcher": "^1.0.0",
+    "karma-spec-reporter": "0.0.31",
+    "ngstorage": "^0.3.11",
+    "pre-commit": "^1.2.2",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.9.0"
+  },
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.3",
+    "angular": "^1.6.4",
+    "angular-animate": "^1.6.4",
+    "angular-aria": "^1.6.4",
+    "angular-material": "^1.1.4",
+    "angular-messages": "^1.6.4",
+    "angular-sanitize": "^1.6.4",
+    "angular-translate": "^2.15.1",
+    "angular-translate-loader-static-files": "^2.15.1",
+    "angular-translate-storage-cookie": "^2.15.1",
+    "angular-translate-storage-local": "^2.15.1"
+  }
+}
