@@ -10,7 +10,7 @@ const jslint = require('gulp-jslint');
 const eslint = require('gulp-eslint');
 const jasmine = require('gulp-jasmine');
 const Server = require('karma').Server;
-const jade = require('gulp-jade');
+
 const sass = require('gulp-sass');
 const serve = require('gulp-serve');
 const sourceFiles = ['./src/**/*.*', '!./src/**/*.es', '!./src/**/*.pug'];
@@ -50,11 +50,7 @@ function sassTask() {
 
 function templates() {
     'use strict';
-    let YOUR_LOCALS = {};
-    gulp.src('./src/**/*.jade')
-        .pipe(jade({
-            locals: YOUR_LOCALS
-        }))
+    gulp.src('./src/**/*.html')
         .pipe(gulp.dest('./build/'))
 }
 
@@ -114,7 +110,7 @@ gulp.task('esLint', function () {
 gulp.task('watch', function () {
     gulp.watch('./src/**/*.js', ['buildSimple']);
     gulp.watch('./src/styles/**/*.scss', ['sass']);
-    gulp.watch('./src/**/*.jade', ['templates']);
+    gulp.watch('./src/**/*.html', ['templates']);
 });
 
 gulp.task('default', ['buildSimple', 'assets', 'copyStatics', 'templates', 'sass', 'serve', 'watch']);
